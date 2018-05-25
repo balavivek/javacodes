@@ -1,26 +1,41 @@
 package basic;
 
+import java.util.Scanner;
+
 public class FindEvenOrOddNumber {
 
 	public static void main(String[] args) {
 
-		// create an array of 10 numbers
-		int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		// basicScenario();
+		inputFromUserScenario();
+	}
 
-		for (int i = 0; i < numbers.length; i++) {
+	static void basicScenario() {
 
-			/*
-			 * use modulus operator to check if the number is even or odd. If we divide any
-			 * number by 2 and reminder is 0 then the number is even, otherwise it is odd.
-			 */
+		int[] number = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-			if (numbers[i] % 2 == 0)
-				System.out.println(numbers[i] + " is even number.");
-			else
-				System.out.println(numbers[i] + " is odd number.");
+		for (int i = 0; i < number.length; i++) {
+
+			if (number[i] % 2 == 0) {
+				System.out.println(number[i] + " Is even Number");
+			} else {
+				System.out.println(number[i] + " Is Odd Number");
+			}
 
 		}
 
 	}
 
+	static void inputFromUserScenario() {
+
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter any number : ");
+		int userInput = reader.nextInt();
+
+		if (userInput % 2 == 0) {
+			System.out.println(userInput + " Is even Number");
+		} else {
+			System.out.println(userInput + " Is Odd Number");
+		}
+	}
 }
