@@ -1,4 +1,4 @@
-package basic;
+package logical;
 
 public class FindLargestSmallestNumber {
 

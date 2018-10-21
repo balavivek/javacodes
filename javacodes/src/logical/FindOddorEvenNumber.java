@@ -1,8 +1,8 @@
-package basic;
+package logical;
 
 import java.util.Scanner;
 
-public class FindEvenOrOddNumber {
+public class FindOddorEvenNumber {
 
 	public static void main(String[] args) {
 
